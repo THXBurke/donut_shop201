@@ -1,28 +1,40 @@
-h1 {
-      font-family: Helvetica;
+  h1 {
+      font-family: Serif;
       color: rgb(246, 244, 244);
       font-size: 400%;
-     
+     }
+  
+  h2 {
+      font-family:Helvetica;
+  }
 
-    }
-
-table {
+  table {
     font-family: Helvetica;
     color: solid rgb(97, 95, 78);
     
     }
 
-body {
+  body {
       background-color: rgb(148,187,197);
      
   	}
 
 
- th {
+  th {
       font-size: 18px;
       border: 1px solid rgb(97, 95, 78);
     }
    
- td {
+  td {
       border: 1px solid rgb(97, 95, 78);
     }
+
+  p {
+    font-family: Helvetica;
+    font-size:;
+  }
+
+  li {
+    font-family: Helvetica;
+    font-size: ;
+  }
