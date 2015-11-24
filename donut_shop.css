@@ -11,6 +11,8 @@
   table {
     font-family: Helvetica;
     color: solid rgb(97, 95, 78);
+    border: 1px solid gray;
+    background-color: rgb(197, 210, 209);
     
     }
 
