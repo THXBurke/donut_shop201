@@ -14,7 +14,7 @@
 	};
 
 	this.getDonutsPerHour = function(){
-		for (var i = 0; i < 11; i++){
+		for (var i = 0; i < 12; i++){
 	    this.hourlyDonutArray.push(Math.floor(avgDonutsPerCust * this.randomCustPerHour()));}
 		return this.hourlyDonutArray;
 	};
@@ -34,19 +34,21 @@
 
 	this.renderTable = function(){
 		var tr = document.createElement("tr");
-		var td = document.createElement("td"); //to be used with for loop for array
+		 
 		tr.innerHTML = this.franchise;
-		//build for loop to append td to each position in array
-		//for loop of hourlyDonutArray
-			//td.innerHTML = hourlyDonutArray[i]
-			//tr.appendChild(td)
+	
 		for (var i=0; i<this.hourlyDonutArray.length; i++){
-		td.innerHTML = this.hourlyDonutArray;
+		var td = document.createElement("td");
+		td.innerHTML = this.hourlyDonutArray[i];
 		tr.appendChild(td)
 	}
+		var td = document.createElement("td");
+		td.innerHTML = this.totalDonuts;
+		tr.appendChild(td);
+		
 		document.getElementById("tableBody").appendChild(tr);
-		console.log(document.getElementById("tableBody"));	
-		document.getElementById("tr");
+			
+		
 	}
 	this.renderTable();
 	};
