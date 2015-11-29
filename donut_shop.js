@@ -61,4 +61,14 @@
 
 
 
+var newLocation = function(){
+var location = document.getElementById("location").value;
+var minCustPerHour = Number(document.getElementById("minCustPerHour").value);
+var maxCustPerHour = Number(document.getElementById("maxCustPerHour").value);
+var avgDonutsPerCust = Number(document.getElementById("avgDonutsPerCust").value);
+console.log("minCustomer",minCustPerHour);
+console.log("addDonuts", avgDonutsPerCust);
+var shop = new DonutShop(avgDonutsPerCust, maxCustPerHour, minCustPerHour, location);
+console.log("newShop", shop)
+}; 
 

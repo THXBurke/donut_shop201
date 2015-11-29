@@ -41,21 +41,22 @@
 <fieldset>
       <legend>New Location Details</legend>
         <label>Location:<br />
-        <input type ="text" name ="location" size="30" maxlength="100"/>
-        </label><br />
+        <input type ="text" id ="location" size="30" maxlength="100"/>
+          </label><br />
         <label>Minimum Customers Per Hour:<br />
-        <input type ="text" name ="minCustPerHour" size="30" maxlength="100"/>
-        </label><br />
+        <input type ="text" id ="minCustPerHour" size="30" maxlength="100"/>
+          </label><br />
         <label>Maximum Customers Per Hour:<br />
-        <input type ="text" name ="maxCustPerHour" size="30" maxlength="100"/>
-        </label><br />
+        <input type ="text" id ="maxCustPerHour" size="30" maxlength="100"/>
+          </label><br />
         <label>Average Doughnuts Purchased Per Customer:<br />
-        <input type ="text" name ="avgDonutsPerCust" size="30" maxlength="100"/>
-      </label><br />
+        <input type ="text" id ="avgDonutsPerCust" size="30" maxlength="100"/>
+        </label><br />
       <br />
-    <button alt="save location" width="10" height="10"/> Save Location</button>
-    <input type="hidden" name="bookmark" value="?"/>
-   </fieldset> 
+    <!-- <button alt="save location" width="10" height="10"/> Save Location </button> -->
+    <input id="submit" name="submit" type="submit" onclick="newLocation()"/>
+    
+</fieldset> 
   
   </body>
    </html>
