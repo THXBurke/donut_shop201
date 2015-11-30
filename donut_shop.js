@@ -70,5 +70,12 @@ console.log("minCustomer",minCustPerHour);
 console.log("addDonuts", avgDonutsPerCust);
 var shop = new DonutShop(avgDonutsPerCust, maxCustPerHour, minCustPerHour, location);
 console.log("newShop", shop)
+document.getElementById("submit").addEventListener("click", newLocation);
 }; 
+
+
+
+
+
+
 
