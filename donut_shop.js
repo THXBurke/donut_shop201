@@ -61,4 +61,23 @@
 
 
 
+var newLocation = function(){
+var location = document.getElementById("location").value;
+var minCustPerHour = Number(document.getElementById("minCustPerHour").value);
+var maxCustPerHour = Number(document.getElementById("maxCustPerHour").value);
+var avgDonutsPerCust = Number(document.getElementById("avgDonutsPerCust").value);
+console.log("minCustomer",minCustPerHour);
+console.log("addDonuts", avgDonutsPerCust);
+var shop = new DonutShop(avgDonutsPerCust, maxCustPerHour, minCustPerHour, location);
+console.log("newShop", shop)
+document.getElementById("submit").addEventListener("click", newLocation);
+}; 
+
+var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
+  jQuery('#egggif').fadeIn(500, function() {
+    window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+  });
+}).listen();
+
+
 
