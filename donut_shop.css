@@ -1,13 +1,16 @@
+
+
   h1 {
       text-align: center;
       font-family: Serif;
       color: #5B7876;
       font-size: 500%;
-
     }
+
   img.align-left {
     float: left;
     margin-right: 10px;
+
   } 
 
   h2 {
@@ -15,6 +18,12 @@
       text-align: center;
       font-family:Helvetica;
       font-size: 200%;
+  }
+
+  h3 {
+      text-align: center;
+      font-family:Helvetica;
+      color: #412A22;
   }
 
   table {
@@ -25,11 +34,12 @@
     padding: 10px;
     }
 
-  body {
+body {
       background-color: #EFECCA;
       background-image: url();
       
-  	}
+    }
+
   th.totals {
     background-color: rgb(157, 163, 163);
   }
@@ -51,6 +61,7 @@
 
   }
 
+
   li {
     font-family: Helvetica;
     font-size: ;
@@ -58,11 +69,15 @@
   }
 
   footer {
-    font-family: cursive;
-    font-size: 10px;
     text-align: center;
-    color: rgb(246, 244, 244);
+  }
 
+  a, ul {
+    color: #412A22;
+    padding: 5px;
+    font-family:Helvetica;
+    font-size: 100%;
+    display: inline;
   }
 
   fieldset {
