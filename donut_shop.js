@@ -1,3 +1,4 @@
+
 	var DonutShop = function(minCustPerHour, maxCustPerHour, avgDonutsPerCust, franchise){
 	this.minCustPerHour = minCustPerHour;
 	this.maxCustPerHour = maxCustPerHour;
@@ -31,7 +32,7 @@
 	  };
 
 	this.report(); 
-
+//create table
 	this.renderTable = function(){
 		var tr = document.createElement("tr");
 		 
@@ -60,7 +61,7 @@
 	var ballard = new DonutShop(8, 58, 3.75, "Ballard"); 
 
 
-
+//add new location and button tag
 var newLocation = function(){
 var location = document.getElementById("location").value;
 var minCustPerHour = Number(document.getElementById("minCustPerHour").value);
@@ -69,10 +70,24 @@ var avgDonutsPerCust = Number(document.getElementById("avgDonutsPerCust").value)
 console.log("minCustomer",minCustPerHour);
 console.log("addDonuts", avgDonutsPerCust);
 var shop = new DonutShop(avgDonutsPerCust, maxCustPerHour, minCustPerHour, location);
-console.log("newShop", shop)
+console.log("newShop", shop(12,24,5,"bothell" ));
 document.getElementById("submit").addEventListener("click", newLocation);
 }; 
 
+
+//using the same HTML elements update an existing location.
+//Use an Array to hold your DonutShop objects.
+var myShops = [
+
+
+
+
+];
+
+var userInput = document.getElementById('userInput');
+
+
+//implement event based easter egg
 var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
   jQuery('#egggif').fadeIn(500, function() {
     window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);

@@ -32,12 +32,14 @@
     border: 1px solid gray;
     background-color: #8F9E8B;
     padding: 10px;
+    overflow: auto;
     }
 
 body {
+      width: 99%;
       background-color: #EFECCA;
       background-image: url();
-      
+      overflow: auto;
     }
 
   th.totals {
