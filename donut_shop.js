@@ -80,8 +80,6 @@ document.getElementById("submit").addEventListener("click", newLocation);
 var myShops = [
 
 
-
-
 ];
 
 var userInput = document.getElementById('userInput');

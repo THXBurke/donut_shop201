@@ -5,7 +5,22 @@
       font-family: Serif;
       color: #5B7876;
       font-size: 500%;
-    }
+
+
+  }
+
+  div.relative {
+    position: static;
+  } 
+
+  div.fixed {
+    position: fixed; 
+  }
+
+  div.absolute {
+    position: absolute;
+}
+
 
   img.align-left {
     float: left;
@@ -33,14 +48,14 @@
     background-color: #8F9E8B;
     padding: 10px;
     overflow: auto;
-    }
+  }
 
 body {
       width: 99%;
       background-color: #EFECCA;
       background-image: url();
       overflow: auto;
-    }
+  }
 
   th.totals {
     background-color: rgb(157, 163, 163);
@@ -50,17 +65,16 @@ body {
       font-size: 18px;
       border: 1px solid rgb(97, 95, 78);
       padding: 3px;
-    }
+  }
    
   td {
       border: 1px solid rgb(97, 95, 78);
       padding: 3px;
-    }
+  }
 
   p {
     font-family: Helvetica;
     font-size:;
-
   }
 
 
