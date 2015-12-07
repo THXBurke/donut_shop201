@@ -1,13 +1,31 @@
+
+
   h1 {
       text-align: center;
       font-family: Serif;
       color: #5B7876;
       font-size: 500%;
 
-    }
+
+  }
+
+  div.relative {
+    position: static;
+  } 
+
+  div.fixed {
+    position: fixed; 
+  }
+
+  div.absolute {
+    position: absolute;
+}
+
+
   img.align-left {
     float: left;
     margin-right: 10px;
+
   } 
 
   h2 {
@@ -17,19 +35,28 @@
       font-size: 200%;
   }
 
+  h3 {
+      text-align: center;
+      font-family:Helvetica;
+      color: #412A22;
+  }
+
   table {
     font-family: Helvetica;
     color: solid rgb(97, 95, 78);
     border: 1px solid gray;
     background-color: #8F9E8B;
     padding: 10px;
-    }
+    overflow: auto;
+  }
 
-  body {
+body {
+      width: 99%;
       background-color: #EFECCA;
       background-image: url();
-      
-  	}
+      overflow: auto;
+  }
+
   th.totals {
     background-color: rgb(157, 163, 163);
   }
@@ -38,18 +65,18 @@
       font-size: 18px;
       border: 1px solid rgb(97, 95, 78);
       padding: 3px;
-    }
+  }
    
   td {
       border: 1px solid rgb(97, 95, 78);
       padding: 3px;
-    }
+  }
 
   p {
     font-family: Helvetica;
     font-size:;
-
   }
+
 
   li {
     font-family: Helvetica;
@@ -58,11 +85,15 @@
   }
 
   footer {
-    font-family: cursive;
-    font-size: 10px;
     text-align: center;
-    color: rgb(246, 244, 244);
+  }
 
+  a, ul {
+    color: #412A22;
+    padding: 5px;
+    font-family:Helvetica;
+    font-size: 100%;
+    display: inline;
   }
 
   fieldset {
